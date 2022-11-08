@@ -7,7 +7,7 @@
  
       <validate tag="label">
         <label for="nombre">Nombre</label><br>
-        <input id="nombre" class="form-control" type="text" v-model.trim="formData.nombre" required name="nombre" :minlength="nombreMinLongitud" :maxlength="nombreMaxLongitud" no-espacios autocomplete="off"/>
+        <input id="nombre" class="form-control" type="text" v-model="formData.nombre" required name="nombre" :minlength="nombreMinLongitud" :maxlength="nombreMaxLongitud" no-espacios autocomplete="off"/>
 
         <field-messages name="nombre" show="$dirty">
           <div slot="required" class="alert alert-danger mt-1">Es obligatorio ingresar el nombre</div>
